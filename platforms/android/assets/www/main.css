@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+	font: 14px 'Open Sans', sans-serif;
+	color: #fff;
+}
+
+.wait {
+	display: block;
+	height: 100%;
+	width: 100%;
+	background: url(img/bg1.jpg) center center no-repeat;
+}
+
+.weather {
+	display: none;
+	height: 100%;
+	width: 100%;
+}
+
+.mainDay {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	height: 75%;
+	width: 100%;
+	background: rgba(53,194,212,1);
+	background: -moz-linear-gradient(top, rgba(53,194,212,1) 0%, rgba(66,199,216,1) 16%, rgba(109,215,228,1) 71%, rgba(132,223,235,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(53,194,212,1)), color-stop(16%, rgba(66,199,216,1)), color-stop(71%, rgba(109,215,228,1)), color-stop(100%, rgba(132,223,235,1)));
+	background: -webkit-linear-gradient(top, rgba(53,194,212,1) 0%, rgba(66,199,216,1) 16%, rgba(109,215,228,1) 71%, rgba(132,223,235,1) 100%);
+	background: -o-linear-gradient(top, rgba(53,194,212,1) 0%, rgba(66,199,216,1) 16%, rgba(109,215,228,1) 71%, rgba(132,223,235,1) 100%);
+	background: -ms-linear-gradient(top, rgba(53,194,212,1) 0%, rgba(66,199,216,1) 16%, rgba(109,215,228,1) 71%, rgba(132,223,235,1) 100%);
+	background: linear-gradient(to bottom, rgba(53,194,212,1) 0%, rgba(66,199,216,1) 16%, rgba(109,215,228,1) 71%, rgba(132,223,235,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#35c2d4', endColorstr='#84dfeb', GradientType=0 );
+}
+
+.mainDay .icon {
+	width: 50px;
+    margin-right: 10px;
+
+}
+
+.mainDay > div {
+	text-transform: uppercase;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.town {
+	font-size: 2rem;
+}
+
+.mainDay .temperature {
+	margin-top: 10%;
+	font-size: 10rem;
+}
+
+.prop {
+	font-size: 1.5rem;
+}
+
+.humidity, .rain-prob {
+	width: 20%;
+	text-align: center;
+}
+
+.humidity *, .rain-prob *{
+	display: inline-block;
+}
+
+.humidity img,
+.rain-prob img {
+	width: 18px;
+}
+
+.wind-speed {
+	margin-right: 5%;
+}
+
+.day-container {
+	display: flex;
+	height: 25%;
+	text-align: center;
+}
+
+.day-container > div {
+	padding-top: 10px;
+	box-sizing: border-box;
+}
+
+.day-container .temperature {
+	font-size: 3rem;
+}
+
+.day-container > div {
+	width: 25%;
+}
+
+.today {
+	background: #84dfeb;
+}
+
+.second {
+	background: #6dd7e4;
+}
+
+.third {
+	background: #48c9d4;
+}
+
+.fourth {
+	background: #35c2d4;
+}
+
+.today img, 
+.second img,
+.third img,
+.fourth img {
+	height: 40px;
+    margin-top: 13px;
+    margin-bottom: -4px;
+}
+
+.degrees {
+	position: absolute;
+	top: 35%;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	font-size: 2rem;
+}
+
+.degrees div {
+	border-top: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+	border-right: 2px solid #fff;
+	padding: 10px 10px 10px 5px;
+}
+
+.c {
+	border-radius: 0 15px 0 0;
+}
+
+.f {
+	border-radius: 0 0 15px 0;
+	margin-top: -2px;
+}
+
+
+@media screen and (orientation: landscape) {
+
+	.mainDay {
+		height: 100%;
+		width: 80%;
+	}
+
+	.day-container {
+		align-items: center;
+		height: 100%;
+		width: 20%;
+		flex-direction: column;
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+
+	.day-container > div {
+		height: 100%;
+		width: 100%;
+		padding-top: 10%;
+	}
+
+
+	.town {
+		font-size: 1.5rem;
+	}
+
+	.mainDay .temperature {
+	    margin-top: 0;
+	    font-size: 8rem;
+	}
+
+
+	.today img, .second img, .third img, .fourth img {
+	    height: 30px;
+    	margin-right: 6px;
+    	margin-top: 2px;
+	}
+
+	.day-container .temperature {
+		display: inline-block;
+	    font-size: 2rem;
+	}
+}

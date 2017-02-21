@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link rel="manifest" href="manifest.json">
+
+    <!-- un-comment this code to enable service worker
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(() => console.log('service worker installed'))
+          .catch(err => console.log('Error', err));
+      }
+    </script>-->
+
+    <!-- <link href="lib/ionic/css/ionic.css" rel="stylesheet"> -->
+    <link href="main.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <!-- <script src="lib/ionic/js/ionic.bundle.js"></script> -->
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="main.js"></script>
+  </head>
+  <body>
+
+    <div class="wait"></div>
+  <div class="weather">
+    <div class="mainDay">
+      <div>
+        <img class="icon" src="" alt="">
+        <div>
+          <div class="town"></div>
+          <div class="data"></div>
+        </div>
+      </div>
+      <div class="temperature"></div>
+      <div class="prop">
+        <div class="wind-speed"></div>
+        <div class="rain-prob">
+          <img src="img/umbrella.png" alt="">
+          <div></div>
+        </div>
+        <div class="humidity">
+          <img src="img/raindrop.png" alt="">
+          <div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="day-container">
+      <div class="day today">
+        <div class="day-name"></div>
+        <img src="" alt="">
+        <div class="temperature"></div>
+      </div>
+      <div class="day second">
+        <div class="day-name"></div>
+        <img src="" alt="">
+        <div class="temperature"></div>
+      </div>
+      <div class="day third">
+        <div class="day-name"></div>
+        <img src="" alt="">
+        <div class="temperature"></div>
+      </div>
+      <div class="day fourth">
+        <div class="day-name"></div>
+        <img src="" alt="">
+        <div class="temperature"></div>
+      </div>
+    </div>
+    <div class="degrees">
+      <div class="c">ºC</div>
+      <div class="f">ºF</div>
+    </div>
+
+  </div>
+ 
+  </body>
+</html>
